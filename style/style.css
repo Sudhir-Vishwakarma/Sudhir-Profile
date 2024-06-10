@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body{
+    background-color: #1c1c1c;
+}
+.main-portfolio-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-portfolio-container .portfolio-img{
+    width: 30%;
+    background-color: #000;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.main-portfolio-container .portfolio-img img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.39, 1.19);
+}
+.main-portfolio-container .portfolio-content{
+    width: 70%;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 0px 20px 20px;
+}
+.main-portfolio-container .portfolio-content .profile-name{
+    width: 100%;
+    color: white;
+    background-color: #292827;
+    transition: all 0.5s ease-in-out;
+}
+.main-portfolio-container .portfolio-content .profile-about{
+    width: 100%;
+    height: 339px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* overflow: scroll; */
+    background-color: #292827;
+    transition: all 0.2s ease-in;
+}
+.main-portfolio-container .portfolio-content .profile-about .about-para{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.main-portfolio-container .portfolio-content .profile-about p span{
+    color: orange;
+}
+.main-portfolio-container .portfolio-content .profile-about .main-about-content{
+    display: none !important;
+}
+.main-portfolio-container .portfolio-content .profile-projects{
+    width: 100%;
+    height: 339px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #292827;
+    transition: all 0.2s ease-in;
+}
+.main-portfolio-container .portfolio-content .profile-projects .projects-para{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.main-portfolio-container .portfolio-content .profile-projects p span{
+    color: orange;
+}
+.main-portfolio-container .portfolio-content .profile-contact{
+    width: 100%;
+    height: 339px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #292827;
+    transition: all 0.2s ease-in;
+}
+.main-portfolio-container .portfolio-content .profile-contact .contact-para{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.main-portfolio-container .portfolio-content .profile-contact p span{
+    color: orange;
+}
+
+
+
+
+/* About Section */
+.main-about-content{
+    width: 100%;
+    display: none;
+}
+.main-about-content .about-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+}
+.main-about-content .about-content1{
+    width: 30%;
+    height: 94%;
+    overflow: hidden;
+    position: fixed;
+    top: 20;
+    left: 20px;
+    margin-right: 20px;
+}
+.main-about-content .about-content1 img{
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1.25,1.2);
+    background-color: #000;
+}
+.main-about-content .about-content2{
+    width: 66%;
+    position: absolute;
+    right: 20px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+.main-about-content .about-content2 .about-close{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px 20px 0px;
+}
+.main-about-content .about-content2 .about-close p{
+    visibility: hidden;
+}
+.main-about-content .about-content2 .about-close i{
+    color: gray;
+    cursor: pointer;
+    font-size: 3rem;
+}
+.main-about-content .about-content2 .about-content2-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main-about-content .about-content2 .about-content2-title span{
+    color: orange;
+}
+.main-about-content .about-content2 .about-hr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-about-content .about-content2 .about-hr i{
+    color: orange;
+    font-size: 1.2rem;
+    margin: 0px 15px;
+}
+.main-about-content .about-content2 .about-hr hr{
+    width: 20%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+}
+.main-about-content .about-content2 .about-details{
+    width: 100%;
+    padding: 20px;
+}
+.main-about-content .about-content2 .about-details .about-detail-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.main-about-content .about-content2 .about-details .about-detail-title p{
+    text-transform: uppercase;
+}
+.main-about-content .about-content2 .about-details .about-detail-title i{
+    margin-right: 5px;
+    color: orange;
+}
+.main-about-content .about-content2 .about-details .about-react{
+    width: 80%;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.main-about-content .about-content2 .about-details .about-personal-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.main-about-content .about-content2 .about-details .about-personal-info span{
+    font-weight: 300;
+    margin-left: 10px;
+}
+.main-about-content .about-content2 .about-details .about-detail-btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-about-content .about-content2 .about-details .about-detail-btns a{
+    margin-right: 20px;
+}
+.about-content2 .about-details .about-detail-btns a button{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.01rem;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: orange;
+}
+.about-content2 .about-details .about-detail-btns a button i{
+    margin-left: 5px;
+}
+.about-content2 .about-details .about-detail-btns a .resume-btn2{
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+    transition: all 0.3s ease-in;
+}
+.about-content2 .about-details .about-detail-btns a .resume-btn2:hover{
+    color: #fff;
+    background-color: orange;
+}
+.about-content2 .about-details .about-detail-btns a .resume-btn3{
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+    transition: all 0.3s ease-in;
+}
+.about-content2 .about-details .about-detail-btns a .resume-btn3:hover{
+    color: #fff;
+    background-color: orange;
+}
+
+
+
+
+
+
+
+/* About Exp Container */
+.about-exp-container{
+    width: 66%;
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    margin: 100px 0px;
+}
+.about-exp-container .main-abt-edu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+.main-abt-edu .exp-container1{
+    width: 30%;
+    display: grid;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+.main-abt-edu .exp-container1 .about-experience{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+    color: gray;
+    cursor: pointer;
+    border: 1px inset gray;
+    transition: all 0.3s ease-in;
+}
+.main-abt-edu .exp-container1 .about-experience:hover{
+    border: 1px outset gray;
+}
+.main-abt-edu .exp-container1 .about-experience i{
+    color: gray;
+    margin-right: 10px;
+}
+.main-abt-edu .exp-container1 .about-experience p{
+    text-transform: uppercase;
+}
+.main-abt-edu .exp-container2{
+    width: 65%;
+    position: relative;
+}
+.main-abt-edu .exp-container2 .about-exp1{
+    width: 90%;
+    height: 580px;
+    margin: 20px auto;
+    background-color: #1c1c1c;
+    border: 1px solid gray;
+    position: absolute;
+    bottom: -300px;
+    left: 50px;
+}
+.main-abt-edu .exp-container2 .about-exp1 .abt-exp1{
+    width: 100%;
+    height: 80px;
+    border: 1px solid gray;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-abt-edu .exp-container2 .about-exp1 .abt-exp1 p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: orange;
+}
+.main-abt-edu .exp-container2 .about-exp1 .abt-exp1 i{
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp{
+    width: 100%;
+    padding: 20px;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp p:first-child{
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp .first-web{
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp .exp-date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-bottom: 1px solid gray;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp .exp-date p{
+    margin-left: 10px;
+}
+.main-abt-edu .exp-container2 .about-exp1 .first-exp .exp-date i{
+    color: gray;
+}
+.main-abt-edu .exp-container2 .about-exp2{
+    width: 90%;
+    height: 580px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    background-color: #1c1c1c;
+    position: absolute;
+    bottom: -300px;
+    left: 50px;
+}
+.main-abt-edu .exp-container2 .about-exp2 .abt-exp1{
+    width: 100%;
+    height: 80px;
+    border: 1px solid gray;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-abt-edu .exp-container2 .about-exp2 .abt-exp1 p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: orange;
+}
+.main-abt-edu .exp-container2 .about-exp2 .abt-exp1 i{
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great p:first-child{
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great .edu-dev{
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-weight: 300;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great .exp-date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0px 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-bottom: 1px solid gray;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great .exp-date p{
+    margin-left: 10px;
+}
+.main-abt-edu .exp-container2 .about-exp2 .first-edu .edu-great .exp-date i{
+    color: gray;
+}
+.main-abt-edu .exp-container2 .about-exp3{
+    width: 90%;
+    height: 580px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    background-color: #1c1c1c;
+    position: absolute;
+    bottom: -300px;
+    left: 50px;
+}
+.main-abt-edu .exp-container2 .about-exp3 .abt-exp1{
+    width: 100%;
+    height: 80px;
+    border: 1px solid gray;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-abt-edu .exp-container2 .about-exp3 .abt-exp1 p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: orange;
+}
+.main-abt-edu .exp-container2 .about-exp3 .abt-exp1 i{
+    color: orange;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+.main-abt-edu .exp-container2 .about-exp3 .edu-skill-container{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 25px;
+}
+.main-abt-edu .exp-container2 .about-exp3 .edu-skill-container p{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main-abt-edu .exp-container2 .about-exp3 .edu-skill-container i{
+    font-size: 12px;
+    color: orange;
+}
+.main-about-content .abt-space{
+    width: 100%;
+    height: 300px;
+    padding-top: 600px;
+}
+
+
+/* Project Section */
+.main-projects-content{
+    display: none !important;
+}
+
+
+
+
+/* Contact Section */
+.main-contact-content{
+    width: 100%;
+    /* position: absolute; */
+    /* top: 0px; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orangered;
+}
+.main-contact-content .contact-img-container{
+    width: 30%;
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #000;
+}
+.main-contact-content .contact-img-container img{
+    width: 100%;
+    transform: scale(1.19, 1.19);
+}
+.main-contact-content .contact-content{
+    width: 70%;
+    color: #fff;
+    margin-left: 10px;
+}
+.main-contact-content .contact-content .contact-close{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0px;
+}
+.main-contact-content .contact-content .contact-close p{
+    visibility: hidden;
+}
+.main-contact-content .contact-content .contact-close i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.main-contact-content .contact-content .contact-content-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main-contact-content .contact-content .contact-content-title span{
+    color: orange;
+}
+.main-contact-content .contact-content .contact-hr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.main-contact-content .contact-content .contact-hr i{
+    color: orange;
+    font-size: 1.2rem;
+    margin: 0px 15px;
+}
+.main-contact-content .contact-content .contact-hr hr{
+    width: 20%;
+    height: 1px;
+    border: none;
+    background-color: gray;
+}
+.contact-content .main-contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-content .main-contact-container .contact-container1{
+    width: 30%;
+    display: grid;
+    padding: 20px;
+    border: 1px solid #292827;
+    background-color: #000;
+}
+.contact-content .main-contact-container .contact-container1 .contact1{
+    width: 100%;
+}
+.contact-content .main-contact-container .contact-container1 .contact1 p{
+    font-size: 1.1rem;
+    color: orange;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0px 0px 20px 10px;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone i{
+    color: gray;
+    margin-bottom: 20px;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 a{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 i{
+    font-size: 1rem;
+    color: #fff;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 .fa-facebook-ff{
+    background-color: #1877F2;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 .fa-square-x-twitterr{
+    background-color: #1DA1F2;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 .fa-githubb{
+    background-color: #24292e;
+}
+.main-contact-container .contact-container1 .contact1 .contact-phone1 .fa-linkedinn{
+    background-color: #0072b1;
+}
+.contact-content .main-contact-container .contact-container2{
+    width: 70%;
+    padding: 0px 30px 20px;
+}
+.contact-content .main-contact-container .contact-container2 .contact-para1{
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contact-content .main-contact-container .contact-container2 .contact-para2{
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.contact-content .main-contact-container .contact-container2 .contact-form{
+    width: 100%;
+}
+.main-contact-container .contact-container2 .contact-form form .form-name{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-contact-container .contact-container2 .contact-form form .form-name input{
+    width: 80%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: orange;
+    border-bottom: 1px solid gray;
+}
+.main-contact-container .contact-container2 .contact-form form .form-name i{
+    color: gray;
+}
+.main-contact-container .contact-container2 .contact-form form .contact-submit{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 10px;
+    outline: 1px solid orange;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.main-contact-container .contact-container2 .contact-form form .contact-submit:hover{
+    color: #fff;
+    background-color: orange;
+    border: none;
+}
+.main-contact-container .contact-container2 .contact-form form .contact-submit p{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Integration with JS width 992px */
+.about-mobile{
+    position: relative !important;
+    top: 100px !important;
+    width: 91.5% !important;
+    height: 100px !important;
+}
+.about-mobile{
+    position: relative !important;
+    top: 5px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 100px !important;
+}
+.project-mobile{
+    position: relative !important;
+    top: 6px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 100px !important;
+}
+.contact-mobile{
+    position: relative !important;
+    top: 7px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 100px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+
+@media (max-width: 992px){
+    .main-portfolio-container{
+        width: 100%;
+    }
+    .main-portfolio-container .portfolio-img{
+        display: none !important;
+    }
+    .main-portfolio-container .portfolio-content{
+        width: 100%;
+        display:  grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .main-portfolio-container .portfolio-content .profile-name{
+        width: 100%;
+        height: 350px;
+    }
+    .main-portfolio-container .portfolio-content .profile-about{
+        width: 100%;
+        height: 100px;
+    }
+    .main-portfolio-container .portfolio-content .profile-projects{
+        width: 100%;
+        height: 100px;
+    }
+    .main-portfolio-container .portfolio-content .profile-contact{
+        width: 100%;
+        height: 100px;
+    }
+
+
+    /* About Section */
+    .main-about-content{
+        width: 100%;
+    }
+    .main-about-content .about-info-container{
+        width: 100%;
+        position: absolute;
+    }
+    .about-info-container .about-content1{
+        width: 30%;
+        left: 10px;
+    }
+    .about-info-container .about-content1 img{
+        height: 700px;
+    }
+    .about-info-container .about-content2{
+        width: 65%;
+        right: 10px;
+    }
+    .about-info-container .about-content2 .about-details .about-react{
+        width: 100%;
+    }
+    .about-info-container .about-content2 .about-details .about-detail-btns{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-info-container .about-content2 .about-details .about-detail-btns a{
+        text-decoration: none;
+    }
+    .about-info-container .about-content2 .about-details .about-detail-btns button{
+        padding: 10px 20px;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-about-content .about-exp-container .main-abt-edu{
+        width: 100%;
+        padding: 0px;
+    }
+    .main-about-content .about-exp-container .main-abt-edu .exp-container1{
+        width: 30%;
+        margin-left: 10px;
+    }
+    .main-about-content .about-exp-container .main-abt-edu .exp-container2{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:700px){
+
+
+    /* About Content */
+
+
+    .main-about-content{
+        width: 100%;
+    }
+    .main-about-content .about-content1{
+        display: none;
+    }
+    .main-about-content .about-content2{
+        width: 100%;
+        padding: 20px;
+    }
+    .main-about-content .about-content2 .about-close{
+        width: 105%;
+        padding: 0px;
+        margin-left: -10px;
+    }
+    .main-about-content .about-content2 .about-personal-info{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+    .main-about-content .about-content2 .about-detail-btns{
+        width: 100%;
+        display: grid !important;
+        justify-content: flex-start !important;
+    }
+    .main-about-content .about-content2 .about-detail-btns button{
+        margin-bottom: 20px;
+    }
+    .main-about-content .about-exp-container{
+        width: 100%;
+    }
+    .main-about-content .about-exp-container .main-abt-edu{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .about-exp-container .main-abt-edu .exp-container1{
+        display: none;
+    }
+    .about-exp-container .main-abt-edu .exp-container2{
+        width: 100%;
+        position: relative;
+    }
+    .about-exp-container .main-abt-edu .exp-container2 .about-exp1{
+        display: block !important;
+        position: relative !important;
+        left: 20px;
+    }
+    .about-exp-container .main-abt-edu .exp-container2 .about-exp2{
+        display: block !important;
+        position: relative !important;
+        left: 20px;
+    }
+    .about-exp-container .main-abt-edu .exp-container2 .about-exp3{
+        display: block;
+        position: relative !important;
+        left: 20px;
+    }
+}
+
