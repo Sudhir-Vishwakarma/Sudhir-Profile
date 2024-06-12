@@ -21,7 +21,6 @@ function about_demo(){
     profile_abt.style.position = "fixed";
     profile_abt.style.right = "20px";
     profile_abt.style.cursor = "context-menu";
-    // main_profile.style.display = "none";
 
     profile_proj.style.display = "none";
     profile_contact.style.display = "none";
@@ -42,26 +41,6 @@ function about_demo(){
             profile_delayed, 500);
     }
 }
-
- 
-// About Section Close //
-
-let abt_close = document.getElementById("about-content-close");
-
-abt_close.addEventListener("click", ()=>{
-    abt_content.style.display = "none";
-    profile_name.style.display = "block";
-    profile_abt.style.display = "flex";
-    profile_abt.style.width = "32.5%";
-    profile_abt.style.height = "339px";
-    profile_title.style.display = "block";
-    portfolio_img.style.display = "block";
-    profile_contact.style.display = "flex";
-    profile_proj.style.display = "flex";
-    profile_proj.style.zIndex = "2";
-    profile_proj.style.position = "relative";
-    profile_proj.style.bottom = "-360px";    
-});
 
 
 
@@ -117,7 +96,7 @@ profile_proj.addEventListener("click", ()=>{
     
     
     function profile_proj_delayed(){
-        profile_proj_content.style.display = "block";
+        profile_proj_content.style.display = "flex";
         profile_proj_title.style.display = "none";
         profile_proj.style.display = "none";
     }
@@ -149,6 +128,7 @@ profile_contact.addEventListener("click", ()=>{
     profile_contact.style.cursor = "context-menu";
 
 
+
     profile_proj.style.display = "none";
     profile_abt.style.display = "none";
     portfolio_img.style.display = "none";
@@ -156,7 +136,7 @@ profile_contact.addEventListener("click", ()=>{
     
     
     function profile_contact_delayed(){
-        profile_contact_content.style.display = "block";
+        profile_contact_content.style.display = "flex";
         profile_con_title.style.display = "none";
         profile_contact.style.display = "none";
     }
@@ -223,4 +203,179 @@ function abt_skill(){
     abt_exp3.style.display = "block";
     abt_exp1.style.display = "none";
     abt_exp2.style.display = "none";
+}
+
+
+
+// About Section Close //
+
+let abt_close = document.getElementById("about-content-close");
+
+abt_close.addEventListener("click", ()=>{
+    abt_content.style.display = "none";
+    profile_name.style.display = "block";
+    profile_name.style.height = "339px";
+    profile_abt.style.display = "flex";
+    profile_abt.style.width = "32.5%";
+    profile_abt.style.height = "339px";
+    profile_title.style.display = "block";
+    portfolio_img.style.display = "block";
+    profile_contact.style.display = "flex";
+    profile_proj.style.display = "flex";
+    profile_proj.style.width = "100%";
+    profile_proj.style.zIndex = "2";
+    profile_proj.style.position = "relative";
+    profile_proj.style.bottom = "-360px"; 
+});
+
+
+// Project Section Close //
+let closeProject = document.getElementById("project-close1");
+
+closeProject.addEventListener("click", ()=>{
+    profile_proj_content.style.display = "none";
+    profile_name.style.display = "block";
+    // profile_name.style.position = "fixed";
+    // profile_name.style.top = "20px";
+    profile_name.style.height = "339px";
+    portfolio_img.style.display = "block";
+    profile_proj.style.position = "fixed";
+    profile_proj.style.right = "20px";
+    profile_proj.style.display = "flex";
+    profile_proj.style.width = "32.5%";
+    profile_proj.style.height = "339px";
+    profile_proj_title.style.display = "block";
+    profile_abt.style.display = "flex";
+    profile_title.style.display = "block";
+    profile_contact.style.display = "flex";
+    profile_contact.style.position = "fixed";
+    profile_contact.style.bottom = "20px";
+    profile_contact.style.right = "540px";
+    profile_contact.style.width = "32.5%";
+    profile_contact.style.height = "339px";
+});
+
+
+// Contact Section Close //
+let contactClose = document.getElementById("contact-close1");
+contactClose.addEventListener("click",()=>{
+    profile_contact_content.style.display = "none";
+    profile_name.style.display = "block";
+    profile_name.style.height = "339px";
+    portfolio_img.style.display = "block";
+    profile_abt.style.display = "flex";
+    profile_contact.style.display = "flex";
+    profile_contact.style.width = "32.5%";
+    profile_contact.style.height = "339px";
+    profile_con_title.style.display = "block";
+    profile_proj.style.display = "flex";
+    profile_proj.style.width = "32.5%";
+    profile_proj.style.height = "339px";
+    profile_proj.style.position = "fixed";
+    profile_proj.style.right = "540px";
+    profile_proj.style.bottom = "20px";
+    profile_proj_title.style.display = "block";
+});
+
+
+
+
+
+// Auto Typing //
+var typed = new Typed(".name-para3",{
+    strings: ["Front-End", "Web-Developer","React/Redux"],
+    typeSpeed: 120,
+    backSpeed: 120,
+    showCursor: false,
+    loop: true
+});
+
+
+
+// Form Validation //
+
+
+let submit = document.getElementById("submit");
+
+let nameSpan = document.getElementById("name-span");
+let emailSpan = document.getElementById("email-span");
+let numberSpan = document.getElementById("number-span");
+let messageSpan = document.getElementById("message-span");
+
+const isValidEmail = (para) =>{
+    const val = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return val.test(String(para).toLowerCase());
+}
+
+
+function submitForm(){
+    // e.preventDefault();
+    
+
+    // Name Section //
+    let name = document.getElementById("name").value;
+    
+    if(name === ""){
+        nameSpan.innerHTML = "Name is Required.";
+    } else if (name.length <= 2){
+        nameSpan.innerHTML = "Enter Full Name.";
+    } else {
+        nameSpan.innerHTML = "";
+    }
+
+
+    // Email Section //
+    let email = document.getElementById("email").value;
+    if(email === ""){
+        emailSpan.innerHTML = "E-mail is Required.";
+    } else if(!isValidEmail(email)){
+        emailSpan.innerHTML = "Enter Valid Email.";
+    } else {
+        emailSpan.innerHTML = "";
+    }
+
+
+    // Number Section //
+    let number = document.getElementById("number").value;
+    if(number === ""){
+        numberSpan.innerHTML = "Number is Required.";
+    } else if(number.length < 10){
+        numberSpan.innerHTML = "Enter Valid Number One.";
+    } else if(number.length > 10){
+        numberSpan.innerHTML = "Enter Valid Number.";
+    } else {
+        numberSpan.innerHTML = "";
+    }
+
+
+    //Message Section 
+    let message = document.getElementById("message").value;
+    if(message === ""){
+        messageSpan.innerHTML = "Message is Required.";
+    } else {
+        messageSpan.innerHTML = "";
+    }
+
+
+
+
+};
+
+
+
+// Mail Sending Using Website using Smtp Server //
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "340e486b-ef6b-4b6c-a7fd-7da9f06be3fe",
+        To : 'karmasudhir48@gmmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Enquiry Mr.Sudhir",
+        Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone No: " + document.getElementById("number").value
+                + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Send Successfully")
+    );
 }
