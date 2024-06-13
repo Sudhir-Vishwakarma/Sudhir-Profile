@@ -1105,6 +1105,29 @@ body{
         background-clip: border-box;
     }
 
+    /* ############################ */
+    /* Changes made in Host Website */
+    /* ############################ */
+    .main-portfolio-container .portfolio-content .profile-name .name-para1{
+        font-weight: 300;
+    }
+    .main-portfolio-container .portfolio-content .profile-name .name-para2{
+        font-size: 2rem;
+    }
+    .main-portfolio-container .portfolio-content .profile-name .name-para3{
+        font-size: 1.5rem;
+    }
+    .main-portfolio-container .portfolio-content .profile-about .about-para{
+        font-size: 1.5rem;
+    }
+    .main-portfolio-container .portfolio-content .profile-projects .projects-para{
+        font-size: 1.5rem;
+    }
+    .main-portfolio-container .portfolio-content .profile-contact .contact-para{
+        font-size: 1.5rem;
+    }
+
+
 
 
     /* About Content */
@@ -1123,8 +1146,20 @@ body{
     .main-about-content .about-content2 .about-close{
         width: 105%;
         padding: 0px;
-        margin-left: -10px;
+        margin-bottom: 30px;
     }
+
+    /* ############################ */
+    /* Changes made in Host Website */
+    /* ############################ */
+    .main-about-content .about-content2 .about-close i{
+        font-size: 2rem;
+    }
+    .main-about-content .about-content2 .about-content2-title{
+        font-size: 2.5rem;
+    }
+
+
     .main-about-content .about-content2 .about-personal-info{
         width: 100%;
         display: grid;
@@ -1182,6 +1217,23 @@ body{
     .main-projects-content .project-flex .project-content{
         width: 100%;
     }
+    /* ############################ */
+    /* Changes made in Host Website */
+    /* ############################ */
+    .main-projects-content .project-flex .project-content .project-close{
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+    .main-projects-content .project-flex .project-content .project-close i{
+        font-size: 2rem;
+        color: gray;
+    }
+    .main-projects-content .project-flex .project-content .project-content-title{
+        font-size: 2.5rem;
+    }
+
+
     .main-projects-content .project-flex .project-content .projects-project{
         width: 100%;
         display: grid;
@@ -1206,6 +1258,23 @@ body{
     .main-contact-content .contact-flex .contact-content{
         width: 100%;
     }
+
+    /* ############################ */
+    /* Changes made in Host Website */
+    /* ############################ */
+    .main-contact-content .contact-flex .contact-content .contact-close{
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 30px;
+    }
+    .main-contact-content .contact-flex .contact-content .contact-close i{
+        font-size: 2rem;
+    }
+    .main-contact-content .contact-flex .contact-content .contact-content-title{
+        font-size: 2.5rem;
+    }
+
+
     .main-contact-content .contact-flex .contact-content .main-contact-container .contact-container2 .contact-form form button{
         width: 100%;
     }
